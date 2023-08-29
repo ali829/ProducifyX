@@ -1,0 +1,15 @@
+{
+  "name": "producifyx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Product Management API Application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "This Express.js application is a robust and efficient tool designed to manage product information. It offers a range of essential routes to streamline product data manipulation"
+  },
+  "author": "abdelali elyasraoui",
+  "license": "ISC"
+}
