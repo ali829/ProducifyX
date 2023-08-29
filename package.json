@@ -4,12 +4,19 @@
   "description": "",
   "main": "Product Management API Application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js"
   },
   "repository": {
     "type": "git",
     "url": "This Express.js application is a robust and efficient tool designed to manage product information. It offers a range of essential routes to streamline product data manipulation"
   },
   "author": "abdelali elyasraoui",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
