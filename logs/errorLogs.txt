@@ -16,3 +16,13 @@ Date : 2023/08/30 12:08:18	 Error Not allowed by CORS
 Date : 2023/08/30 12:08:20	 Error Not allowed by CORS
 Date : 2023/08/30 12:08:02	 Error Not allowed by CORS
 Date : 2023/08/30 12:08:25	 Error Not allowed by CORS
+Date : 2023/08/30 12:08:68	 Error Not allowed by CORS
+Date : 2023/08/30 13:08:50	 Error Not allowed by CORS
+Date : 2023/08/30 13:08:84	 Error Not allowed by CORS
+Date : 2023/08/30 13:08:43	 Error Not allowed by CORS
+Date : 2023/08/30 13:08:84	 Error Not allowed by CORS
+Date : 2023/08/30 13:08:13	 Error Not allowed by CORS
+Date : 2023/08/30 14:08:02	 TypeError res.status is not a function
+Date : 2023/08/30 14:08:64	 TypeError res.status is not a function
+Date : 2023/08/30 14:08:23	 TypeError Cannot read properties of undefined (reading 'name')
+Date : 2023/08/30 14:08:67	 TypeError Cannot read properties of undefined (reading 'name')

@@ -1,4 +1,4 @@
-const { logger } = require("./logger.middleware");
+const { logger } = require("../helpers/middleware.helper.js");
 
 const errorHandlerMiddleware = (err, req, res, next) => {
   if (err) {

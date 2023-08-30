@@ -1,11 +1,12 @@
 const products = require("../models/products.json");
+const { responseHelper } = require("../helpers/api.helper");
 
 // callback handlers
 exports.productsGetAll = (req, res) => {
   if (products.length > 0) {
-    res.status(200).json(products);
+    responseHelper(res, 200, products);
   } else {
-    res.status(204).json({
+    responseHelper(res, 204, {
       message: "There is no product here",
       status_code: res.statusCode,
     });
@@ -19,18 +20,18 @@ exports.productGetWithId = (req, res) => {
   );
 
   if (currentProduct) {
-    res.status(200).json(currentProduct);
+    // res.status(200).json(currentProduct);
+    responseHelper(res, 200, currentProduct);
   } else {
-    res
-      .status(404)
-      .json({ message: "product not found", status_code: res.statusCode });
+    responseHelper(res, 404, {
+      message: "product not found",
+      status_code: res.statusCode,
+    });
   }
 };
 
 exports.productSearch = (req, res) => {
-  const q = req.query.q;
-  const minPrice = req.query.minPrice;
-  const maxPrice = req.query.maxPrice;
+  const { q, minPrice, maxPrice } = req.query;
   const filteredProducts = products.filter((product) => {
     return (
       product.name.toLowerCase().includes(q.toLowerCase()) &
@@ -40,22 +41,24 @@ exports.productSearch = (req, res) => {
   });
 
   if (filteredProducts.length > 0) {
-    res.status(200).json(filteredProducts);
+    responseHelper(res, 200, filteredProducts);
   } else {
-    res
-      .status(404)
-      .json({ message: "product not found", status_code: res.statusCode });
+    responseHelper(res, 404, {
+      message: "product not found",
+      status_code: res.statusCode,
+    });
   }
 };
 
 exports.createProduct = (req, res) => {
+  const { name, price } = req.body;
   const newProduct = {
     id: products.length + 1,
-    name: req.body.name,
-    price: req.body.price,
+    name,
+    price,
   };
   products.push(newProduct);
-  res.status(201).json(products);
+  responseHelper(res, 201, products);
 };
 
 exports.updateProduct = (req, res) => {
@@ -64,15 +67,19 @@ exports.updateProduct = (req, res) => {
     (product) => product.id === productId
   );
   if (indexOfProduct === -1) {
-    res.status(404).json("product not found");
+    responseHelper(res, 404, {
+      message: "product not found",
+      status_code: res.statusCode,
+    });
   } else {
+    const { name, price } = req.body;
     const updatedProduct = {
       id: productId,
-      name: req.body.name,
-      price: req.body.price,
+      name,
+      price,
     };
     products[indexOfProduct] = updatedProduct;
-    res.status(200).json(products[indexOfProduct]);
+    responseHelper(res, 200, products[indexOfProduct]);
   }
 };
 
@@ -82,14 +89,15 @@ exports.deleteProduct = (req, res) => {
     (product) => product.id === productId
   );
   if (indexOfProduct === -1) {
-    res.status(404).json("product not found");
+    responseHelper(res, 404, {
+      message: "product not found",
+      status_code: res.statusCode,
+    });
   } else {
     products.splice(indexOfProduct, 1);
-    res.status(200).json({
+    responseHelper(res, 200, {
       products,
-      message: `product ${
-        products[indexOfProduct - 1].name
-      } deleted successfully`,
+      message: `product deleted successfully`,
     });
   }
 };
