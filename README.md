@@ -44,29 +44,26 @@ This module contains the callback handlers for each route.
 
 This JSON file contains an array of product objects.
 
-
-- __D:\\Programming\\Projects\\ProducifyX__
-   - [README.md](README.md)
-   - __controllers__
-     - [productController.js](controllers/productController.js)
-   - __helpers__
-     - [api.helper.js](helpers/api.helper.js)
-     - [middleware.helper.js](helpers/middleware.helper.js)
-   - __logs__
-     - [errorLogs.txt](logs/errorLogs.txt)
-     - [logging.txt](logs/logging.txt)
-   - [main.js](main.js)
-   - __middlewares__
-     - [error.middleware.js](middlewares/error.middleware.js)
-     - [logger.middleware.js](middlewares/logger.middleware.js)
-   - __models__
-     - [products.json](models/products.json)
-   - [node\_modules](node_modules)
-   - [package\-lock.json](package-lock.json)
-   - [package.json](package.json)
-   - __routes__
-     - [productRoutes.js](routes/productRoutes.js)
-   - __views__
-     - [index.ejs](views/index.ejs)
-     - [productDetails.ejs](views/productDetails.ejs)
-
+- [README.md](README.md)
+- **controllers**
+  - [productController.js](controllers/productController.js)
+- **helpers**
+  - [api.helper.js](helpers/api.helper.js)
+  - [middleware.helper.js](helpers/middleware.helper.js)
+- **logs**
+  - [errorLogs.txt](logs/errorLogs.txt)
+  - [logging.txt](logs/logging.txt)
+- [main.js](main.js)
+- **middlewares**
+  - [error.middleware.js](middlewares/error.middleware.js)
+  - [logger.middleware.js](middlewares/logger.middleware.js)
+- **models**
+  - [products.json](models/products.json)
+- [node_modules](node_modules)
+- [package\-lock.json](package-lock.json)
+- [package.json](package.json)
+- **routes**
+  - [productRoutes.js](routes/productRoutes.js)
+- **views**
+  - [index.ejs](views/index.ejs)
+  - [productDetails.ejs](views/productDetails.ejs)
