@@ -20,6 +20,8 @@ app.use(cors(corsOptions));
 // format request body to json
 app.use(express.json());
 
+// set template engine
+app.set("view engine", "ejs");
 // import routers
 const productsRoute = require("./routes/productRoutes");
 

@@ -26,3 +26,84 @@ Date : 2023/08/30 14:08:02	 TypeError res.status is not a function
 Date : 2023/08/30 14:08:64	 TypeError res.status is not a function
 Date : 2023/08/30 14:08:23	 TypeError Cannot read properties of undefined (reading 'name')
 Date : 2023/08/30 14:08:67	 TypeError Cannot read properties of undefined (reading 'name')
+Date : 2023/08/31 10:08:72	 ReferenceError renderHelper is not defined
+Date : 2023/08/31 10:08:72	 ReferenceError renderHelper is not defined
+Date : 2023/08/31 10:08:28	 Error No default engine was specified and no extension was provided.
+Date : 2023/08/31 11:08:25	 TypeError D:\Programming\Projects\ProducifyX\views\index.ejs:9
+    7|   </head>
+    8|   <body>
+ >> 9|     <% products.foreach(function(product){ %> <%= product.id %> <%= product.name
+    10|     %> <%= product.price %> <% }) %>
+    11|   </body>
+    12| </html>
+
+products.foreach is not a function
+Date : 2023/08/31 11:08:11	 TypeError D:\Programming\Projects\ProducifyX\views\index.ejs:9
+    7|   </head>
+    8|   <body>
+ >> 9|     <% products.foreach(function(product){ %> <%= product.id %> <%= product.name
+    10|     %> <%= product.price %> <% }) %>
+    11|   </body>
+    12| </html>
+
+products.foreach is not a function
+Date : 2023/08/31 11:08:28	 ReferenceError D:\Programming\Projects\ProducifyX\views\productDetails.ejs:6
+    4|     <meta charset="UTF-8" />
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ >> 6|     <title><%=title%></title>
+    7|   </head>
+    8|   <%= product.id %>
+    9|   <%= product.name %>
+
+title is not defined
+Date : 2023/08/31 12:08:81	 TypeError D:\Programming\Projects\ProducifyX\views\productDetails.ejs:8
+    6|     <title><%=title%></title>
+    7|   </head>
+ >> 8|   <%= product.id %>
+    9|   <%= product.name %>
+    10|   <%= product.price %>
+    11|   <%= product.desc %>
+
+Cannot read properties of undefined (reading 'id')
+Date : 2023/08/31 12:08:44	 SyntaxError Unexpected identifier in D:\Programming\Projects\ProducifyX\views\index.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+Date : 2023/08/31 12:08:75	 SyntaxError Unexpected identifier in D:\Programming\Projects\ProducifyX\views\index.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+Date : 2023/08/31 12:08:36	 SyntaxError Unexpected token '=' in D:\Programming\Projects\ProducifyX\views\index.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+Date : 2023/08/31 12:08:36	 TypeError D:\Programming\Projects\ProducifyX\views\productDetails.ejs:8
+    6|     <title><%=title%></title>
+    7|   </head>
+ >> 8|   <%= product.id %>
+    9|   <%= product.name %>
+    10|   <%= product.price %>
+    11|   <%= product.desc %>
+
+Cannot read properties of undefined (reading 'id')
+Date : 2023/08/31 12:08:91	 TypeError D:\Programming\Projects\ProducifyX\views\productDetails.ejs:8
+    6|     <title><%=title%></title>
+    7|   </head>
+ >> 8|   <%= product.id %>
+    9|   <%= product.name %>
+    10|   <%= product.price %>
+    11|   <%= product.desc %>
+
+Cannot read properties of undefined (reading 'id')
+Date : 2023/08/31 12:08:72	 TypeError D:\Programming\Projects\ProducifyX\views\productDetails.ejs:8
+    6|     <title><%=title%></title>
+    7|   </head>
+ >> 8|   <%= product.id %>
+    9|   <%= product.name %>
+    10|   <%= product.price %>
+    11|   <%= product.desc %>
+
+Cannot read properties of undefined (reading 'id')

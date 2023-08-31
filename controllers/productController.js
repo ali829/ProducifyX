@@ -1,15 +1,17 @@
 const products = require("../models/products.json");
-const { responseHelper } = require("../helpers/api.helper");
+const { responseHelper, renderHelper } = require("../helpers/api.helper");
 
 // callback handlers
 exports.productsGetAll = (req, res) => {
+  data = {
+    products,
+    title: "Products Home page",
+  };
   if (products.length > 0) {
-    responseHelper(res, 200, products);
+    renderHelper(res, data, "index");
   } else {
-    responseHelper(res, 204, {
-      message: "There is no product here",
-      status_code: res.statusCode,
-    });
+    data.title = "there is no product yet";
+    renderHelper(res, data, "index");
   }
 };
 
@@ -18,15 +20,20 @@ exports.productGetWithId = (req, res) => {
   const currentProduct = products.find(
     (product) => product.id === parseInt(paramId)
   );
+  const data = {
+    product: currentProduct,
+    title: "Products Home page",
+  };
 
-  if (currentProduct) {
-    // res.status(200).json(currentProduct);
-    responseHelper(res, 200, currentProduct);
+  if (data.product) {
+    // responseHelper(res, 200, currentProduct);
+    renderHelper(res, data, "productDetails");
   } else {
-    responseHelper(res, 404, {
-      message: "product not found",
-      status_code: res.statusCode,
-    });
+    // responseHelper(res, 404, {
+    //   message: "product not found",
+    //   status_code: res.statusCode,
+    // });
+    renderHelper(res, data, "productDetails");
   }
 };
 
