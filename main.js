@@ -16,6 +16,8 @@ const { corsOptions } = require("./helpers/middleware.helper");
 app.use(loggerHandler);
 // enable cors
 app.use(cors(corsOptions));
+// serve static files
+app.use(express.static("public",{ maxAge: 31536000 }));
 
 // format request body to json
 app.use(express.json());

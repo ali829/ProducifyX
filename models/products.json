@@ -3,31 +3,36 @@
       "id": 1,
       "name": "iPhone 12 Pro",
       "desc": "The iPhone 12 Pro is a flagship smartphone from Apple, known for its powerful performance, high-quality camera system, and sleek design.",
-      "price": 1099.99
+      "price": 1099.99,
+      "image":"/images/apple-iphone-12-pro-max-128-gb-bleu-pacifique.jpg"
     },
     {
       "id": 2,
       "name": "Samsung Galaxy S21",
       "desc": "The Samsung Galaxy S21 is a premium Android smartphone with a stunning display, advanced camera features, and top-notch performance.",
-      "price": 999.99
+      "price": 999.99,
+      "image":"/images/galaxys21.jpg"
     },
     {
       "id": 3,
       "name": "Sony PlayStation 5",
       "desc": "The Sony PlayStation 5 is the latest generation gaming console, offering cutting-edge graphics, immersive gameplay, and a range of exclusive titles.",
-      "price": 499.99
+      "price": 499.99,
+      "image":"/images/SonyPlayStation5.jpg"
     },
     {
       "id": 4,
       "name": "MacBook Pro 16",
       "desc": "The MacBook Pro 16 is a powerful laptop by Apple, designed for professionals and creatives, featuring a large display and impressive performance.",
-      "price": 2399.99
+      "price": 2399.99,
+      "image":"/images/macbook-pro-16-retina-i9-16-go-1-to-ssd-touchbar-gris-sideral.jpg"
     },
     {
       "id": 5,
       "name": "DJI Mavic Air 2",
       "desc": "The DJI Mavic Air 2 is a compact yet advanced drone with high-quality camera capabilities, intelligent flight modes, and extended battery life.",
-      "price": 799.99
+      "price": 799.99,
+      "image":"/images/mavicair2.jpg"
     }
   ]
   
